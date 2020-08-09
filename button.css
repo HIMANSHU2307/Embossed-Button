@@ -12,8 +12,8 @@ body {
 .box {
   text-align: center;
   color: #1976d2;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border: 1px solid rgba(0, 0, 0, 0);
   background-color: #c4def6;
   border-radius: 10px;
@@ -21,8 +21,22 @@ body {
   outline: none;
   transition: box-shadow 0.2s;
   cursor: pointer;
+  font-size: 24px
+}
+
+.box .chear {
+  display: none;
+  transition: display 0.2s;
+}
+
+.box:active .chear {
+  display:block;
 }
 
 .box:active {
   box-shadow: 2px 2px 5px white, -1px -1px 5px  #64b5f6;
+}
+
+.box:active .happy {
+  display:none;
 }
